@@ -61,3 +61,15 @@ You can test `POST /insured` with this sample body:
   ]
 }
 
+## 📝 Personal Considerations / Improvements
+- Business Validation (in Domain Models - DDD style vs service layer)
+- Where to incorporate validation? (Controller layer (DTOs) vs Service Layer vs both?)
+- Mappers - create my own vs use lib (MapStruct, ModelMapper)
+- Handling exception globally vs per method
+- Dealing with errors - Create own exception implementation, not losing stack trace when re-throwing
+- Entity relationship - Address in its own table vs embedded? Parent (Insured) / Child (Contract) bidirectional relationship?  
+- Inheritance type (single table, joined, table per class)
+- How to recognize which Contract subclass is being used?  - JsonSubType
+
+- Testing controllers via MockMvc would document business restrictions better than using Postman
+- Structure of commits - more commits, less logic per commit, use descriptions like feat, test, docs, fix...
