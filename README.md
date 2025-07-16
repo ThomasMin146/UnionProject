@@ -60,6 +60,7 @@ You can test `POST /insured` with this sample body:
     }
   ]
 }
+```
 
 ## 📝 Personal Considerations / Improvements
 - Business Validation (in Domain Models - DDD style vs service layer)
