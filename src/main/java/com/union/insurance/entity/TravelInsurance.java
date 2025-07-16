@@ -19,6 +19,8 @@ public class TravelInsurance extends Contract {
     private LocalDate insuranceFrom;
     @NotNull
     private LocalDate insuranceTo;
-    private boolean liabilityInsurance;
-    private boolean accidentInsurance;
+    @NotNull
+    private Boolean liabilityInsurance;
+    @NotNull
+    private Boolean accidentInsurance;
 }

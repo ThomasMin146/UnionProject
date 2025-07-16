@@ -47,8 +47,8 @@ public class ContractMapper {
         entity.setStartDate(dto.getStartDate());
         entity.setInsuranceFrom(dto.getInsuranceFrom());
         entity.setInsuranceTo(dto.getInsuranceTo());
-        entity.setAccidentInsurance(dto.isAccidentInsurance());
-        entity.setLiabilityInsurance(dto.isLiabilityInsurance());
+        entity.setAccidentInsurance(dto.getAccidentInsurance());
+        entity.setLiabilityInsurance(dto.getLiabilityInsurance());
         return entity;
     }
 
@@ -68,8 +68,8 @@ public class ContractMapper {
         dto.setStartDate(entity.getStartDate());
         dto.setInsuranceFrom(entity.getInsuranceFrom());
         dto.setInsuranceTo(entity.getInsuranceTo());
-        dto.setAccidentInsurance(entity.isAccidentInsurance());
-        dto.setLiabilityInsurance(entity.isLiabilityInsurance());
+        dto.setAccidentInsurance(entity.getAccidentInsurance());
+        dto.setLiabilityInsurance(entity.getLiabilityInsurance());
         return dto;
     }
 
